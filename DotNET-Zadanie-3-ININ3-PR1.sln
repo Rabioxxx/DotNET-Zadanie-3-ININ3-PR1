@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNET-Zadanie-3-ININ3-PR1", "DotNET-Zadanie-3-ININ3-PR1\DotNET-Zadanie-3-ININ3-PR1.csproj", "{44B6E81C-6336-4787-B3DE-ED93BF301C51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44B6E81C-6336-4787-B3DE-ED93BF301C51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44B6E81C-6336-4787-B3DE-ED93BF301C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44B6E81C-6336-4787-B3DE-ED93BF301C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44B6E81C-6336-4787-B3DE-ED93BF301C51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DA8884C-64BE-4BE5-A3AC-D8B81AD6F1B2}
+	EndGlobalSection
+EndGlobal
