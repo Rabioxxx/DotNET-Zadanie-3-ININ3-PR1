@@ -68,6 +68,7 @@
             Text="{Binding Premiere}"/>
 
         <Button
+            Click="CloseWindow"
             Margin="110, 0, 110, 0"
             Grid.Row="5"
             Grid.ColumnSpan="2"

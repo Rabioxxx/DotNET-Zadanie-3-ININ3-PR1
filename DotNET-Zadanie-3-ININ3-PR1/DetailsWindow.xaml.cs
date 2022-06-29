@@ -23,5 +23,10 @@ namespace DotNET_Zadanie_3_ININ3_PR1
         {
             InitializeComponent();
         }
+
+        private void CloseWindow(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
