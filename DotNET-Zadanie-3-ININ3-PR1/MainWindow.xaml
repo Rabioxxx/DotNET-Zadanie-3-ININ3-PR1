@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DotNET_Zadanie_3_ININ3_PR1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="400" Width="300" FontSize="24">
+    
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
+        <ListBox
+            x:Name="mainList"
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="4">
+
+        </ListBox>
+
+        <Button
+            x:Name="addButton"
+            Grid.Row="5"
+            Content="Add"/>
+        <Button
+            x:Name="editButton"
+            Grid.Row="5"
+            Grid.Column="1"
+            Content="Edit"/>
     </Grid>
 </Window>
