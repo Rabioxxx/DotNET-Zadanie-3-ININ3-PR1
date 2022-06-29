@@ -19,10 +19,8 @@ namespace DotNET_Zadanie_3_ININ3_PR1
     /// </summary>
     public partial class DetailsWindow : Window
     {
-        MainListEntry entry;
         public DetailsWindow(MainListEntry entry)
         {
-            this.entry = entry;
             DataContext = entry;
             InitializeComponent();
         }
