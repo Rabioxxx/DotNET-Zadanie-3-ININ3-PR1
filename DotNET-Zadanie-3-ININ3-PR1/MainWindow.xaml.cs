@@ -23,6 +23,18 @@ namespace DotNET_Zadanie_3_ININ3_PR1
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = new Model();
+        }
+
+        private void AddClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void EditClick(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
