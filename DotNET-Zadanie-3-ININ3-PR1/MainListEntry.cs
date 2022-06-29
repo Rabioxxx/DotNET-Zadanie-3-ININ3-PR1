@@ -40,7 +40,8 @@ namespace DotNET_Zadanie_3_ININ3_PR1
             }
         }
 
-        string title, director, publisher, dataMedium, premiere;
+        string title, director, publisher, dataMedium;
+        DateTime premiere;
 
         public string RecordDetails => $"{title}";
 
@@ -80,7 +81,7 @@ namespace DotNET_Zadanie_3_ININ3_PR1
                 OnPropertyChanged();
             }
         }
-        public string Premiere
+        public DateTime Premiere
         {
             get => premiere;
             set
@@ -90,7 +91,7 @@ namespace DotNET_Zadanie_3_ININ3_PR1
             }
         }
 
-        public MainListEntry(string title, string director, string publisher, string dataMedium, string premiere)
+        public MainListEntry(string title, string director, string publisher, string dataMedium, DateTime premiere)
         {
             Title = title;
             Director = director;
