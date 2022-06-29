@@ -20,21 +20,32 @@ namespace DotNET_Zadanie_3_ININ3_PR1
     /// </summary>
     public partial class MainWindow : Window
     {
+        Model model = new Model();
         public MainWindow()
         {
             InitializeComponent();
 
-            DataContext = new Model();
+            DataContext = model;
         }
 
         private void AddClick(object sender, RoutedEventArgs e)
         {
+            MainListEntry entry = model.AddNewEntry();
+            ListBox entryList = (ListBox)FindName("mainList");
+            entryList.ItemsSource = model.MainList;
 
+            DetailsWindow detailsWindow = new DetailsWindow(entry);
+            detailsWindow.Show();
         }
 
         private void EditClick(object sender, RoutedEventArgs e)
         {
-
+            ListBox entryList = (ListBox)FindName("mainList");
+            MainListEntry x = (MainListEntry)entryList.SelectedItem;
+            if (x != null)
+            {
+                (new DetailsWindow(x)).Show();
+            }
         }
     }
 }
