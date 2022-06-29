@@ -23,9 +23,15 @@
 
         <ListBox
             x:Name="mainList"
+            ItemsSource="{Binding MainList}"
             Grid.ColumnSpan="2"
             Grid.RowSpan="4">
 
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding ListFormat}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
 
         <Button
