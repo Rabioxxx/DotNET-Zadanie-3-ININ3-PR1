@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DotNET_Zadanie_3_ININ3_PR1
 {
-    internal class MainListEntry : INotifyPropertyChanged
+    public class MainListEntry : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         private readonly static Dictionary<string, string[]> relatedProperties = new Dictionary<string, string[]>()
@@ -98,6 +98,11 @@ namespace DotNET_Zadanie_3_ININ3_PR1
             Publisher = publisher;
             DataMedium = dataMedium;
             Premiere = premiere;
+        }
+
+        public MainListEntry()
+        {
+
         }
     }
 }
